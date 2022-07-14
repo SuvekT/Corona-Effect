@@ -1,0 +1,62 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[Depth]       =  1
+[LengthUnits] =  centimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 1
+  <BeginBdry>
+    <BdryName> = "New Boundary"
+    <BdryType> = 0
+    <Vs> = 0
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+[BlockProps]  = 2
+  <BeginBlock>
+    <BlockName> = "Air"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "copper"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 1
+  <BeginConductor>
+    <ConductorName> = "circuit"
+    <Vc> = 66000
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+[NumPoints] = 8
+-452	210	0	0	0
+-447	-203	0	0	0
+473	203	0	0	0
+472	-205	0	0	0
+-20	0	0	0	0
+-21	0	0	0	0
+79	0	0	0	0
+80	0	0	0	0
+[NumSegments] = 4
+0	2	-1	1	0	0	0
+2	3	-1	1	0	0	0
+3	1	-1	1	0	0	0
+1	0	-1	1	0	0	0
+[NumArcSegments] = 4
+5	4	180	1	0	0	0	1
+4	5	180	1	0	0	0	1
+6	7	180	1	0	0	0	1
+7	6	180	1	0	0	0	1
+[NumHoles] = 0
+[NumBlockLabels] = 3
+-274	39	1	-1	0	0
+-20.600000000000001	-0.10000000000000001	2	-1	0	0
+79.599999999999994	0.10000000000000001	2	-1	0	0
